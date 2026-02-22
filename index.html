@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORTEX LIKES | FF Automation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="vortex-container">
+        <header>
+            <h1 class="logo">VORTEX <span>LIKES</span></h1>
+            <p>Sistema de Impulsionamento Free Fire</p>
+        </header>
+
+        <main class="card">
+            <div class="input-group">
+                <label for="playerID">ID DO JOGADOR</label>
+                <input type="number" id="playerID" placeholder="Ex: 12345678" required>
+            </div>
+
+            <button id="btnEnviar" onclick="processarLikes()">
+                <span id="btnText">INICIAR SEQUÊNCIA</span>
+                <div id="loader" class="hidden"></div>
+            </button>
+
+            <div id="console" class="console-box">
+                <span class="cursor">></span> Aguardando comandos...
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by Vortex Tech | Baseado na API paulafredo</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
